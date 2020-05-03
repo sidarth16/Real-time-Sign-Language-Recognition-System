@@ -106,11 +106,6 @@ epochs = 200
 callbacks = myCallback()   #object of the class created
 history = model.fit(np.array(images), labels_encoded, epochs=epochs, batch_size= 100 , callbacks=[callbacks]) # 32)
 
-model.save('CNN_MODEL.h5') 
-
-
-# In[12]:
-
-
-model.summary()
+model.save('CNN_model.h5') 
+#print(model.summary())
 
