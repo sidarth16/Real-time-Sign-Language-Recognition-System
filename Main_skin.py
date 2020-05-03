@@ -126,7 +126,7 @@ def str_partition(string , limit ):
             s.append(" ")
     return(s)
 
-model = load_model('trained_from_drawing_ep_acc_99.95_batch_100_skin.h5')
+model = load_model('CNN_model.h5')
 encoding_chart = pd.read_csv('label_encoded.csv')
 encoding_values = encoding_chart['Encoded'].values
 encoding_labels = encoding_chart['Label'].values
